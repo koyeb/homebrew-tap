@@ -11,18 +11,18 @@ class KoyebCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc1/koyeb-cli_2.0.0-rc1_darwin_amd64.tar.gz"
-      sha256 "14b06dfda6d6ab549aae0b22af0b11f8f3bcad78f55f0090ffd068607813055f"
+      sha256 "0785d8efcb37808a499e57934eea8a2168c521da7090e215aeee7b97fe0de8fd"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc1/koyeb-cli_2.0.0-rc1_linux_amd64.tar.gz"
-      sha256 "5422c7c23b24c65f42d19f88fe70c7f9b59d5e3db0e9eeeeaf4a8538f3a37a23"
+      sha256 "7d90f2833636efa78c5e5161d0378aedd8b3f476b1eabd3bbf85dae2ac900d55"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc1/koyeb-cli_2.0.0-rc1_linux_arm64.tar.gz"
-      sha256 "968330ec531bbd666d2662a3ac7f3a9701f939ae36b1833350d39607d9c237d5"
+      sha256 "cb69c0769fec8027713d683b3aef37d40b7ff344352407b480dcb311cb41d2f2"
     end
   end
 
