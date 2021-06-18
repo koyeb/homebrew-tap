@@ -5,28 +5,28 @@
 class Koyeb < Formula
   desc ""
   homepage "https://koyeb.com"
-  version "2.0.0-rc3"
+  version "2.0.0-rc4"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc3/koyeb-cli_2.0.0-rc3_darwin_amd64.tar.gz"
-      sha256 "97433bd9b3c8b09ea2211c7b2a014f938c39f1b3ef247393deeac0666a013c66"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc4/koyeb-cli_2.0.0-rc4_darwin_amd64.tar.gz"
+      sha256 "8728581486d65f0b4e43544e65db293355cd091001e347d0c30b98ffbf938e55"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc3/koyeb-cli_2.0.0-rc3_darwin_arm64.tar.gz"
-      sha256 "172e8da1590244cd322d32fa0785264ae4cf4365f6a44d586e2d999bda9b66f1"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc4/koyeb-cli_2.0.0-rc4_darwin_arm64.tar.gz"
+      sha256 "27c5c1a605d3a198c57f14981cf4ade0b75cb0e35431e9cb4456a45491dbbfed"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc3/koyeb-cli_2.0.0-rc3_linux_amd64.tar.gz"
-      sha256 "3725f195a1d36ad0d2be7c613688ff72a65cc73610166ad08e0aae53cfaa3031"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc4/koyeb-cli_2.0.0-rc4_linux_amd64.tar.gz"
+      sha256 "401d1d88042e4760f499a80ab8f3ded34662c6d19bebbdc68920f22e9e35f18a"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc3/koyeb-cli_2.0.0-rc3_linux_arm64.tar.gz"
-      sha256 "7cbf5235008f83bac547f3a69a823e3b346645b46f5421e65ddd4eb3b2f914e9"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.0.0-rc4/koyeb-cli_2.0.0-rc4_linux_arm64.tar.gz"
+      sha256 "09d48c45ab45ccd7da50721e899f03b2cd4b19a04ca5098ceb687d0075103e64"
     end
   end
 
