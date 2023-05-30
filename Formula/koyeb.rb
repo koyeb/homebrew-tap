@@ -5,20 +5,20 @@
 class Koyeb < Formula
   desc ""
   homepage "https://koyeb.com"
-  version "2.14.0"
+  version "2.15.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.14.0/koyeb-cli_2.14.0_darwin_amd64.tar.gz"
-      sha256 "e49efdd6eaae34cba7068605a0d2280e1930da107f262477b3c60f009f8cb8c6"
+    if Hardware::CPU.arm?
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.15.0/koyeb-cli_2.15.0_darwin_arm64.tar.gz"
+      sha256 "cc5aff9cf1610caee768e51285b8a226b7cbe4958055de586f7a322763d1c774"
 
       def install
         bin.install "koyeb"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.14.0/koyeb-cli_2.14.0_darwin_arm64.tar.gz"
-      sha256 "783b46db9f91b61776b9fb00f98450569d131cf142f33ed3b4e919c219068079"
+    if Hardware::CPU.intel?
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.15.0/koyeb-cli_2.15.0_darwin_amd64.tar.gz"
+      sha256 "9d21e3b5cb616990233d15a7c96e5dba7a55ab9553732da4b4a22d82b674022d"
 
       def install
         bin.install "koyeb"
@@ -27,17 +27,17 @@ class Koyeb < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.14.0/koyeb-cli_2.14.0_linux_arm64.tar.gz"
-      sha256 "6b39b777f29598238f2f0513da2b3029af3b5304b2397b9d5d45c849eb11a5a6"
+    if Hardware::CPU.intel?
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.15.0/koyeb-cli_2.15.0_linux_amd64.tar.gz"
+      sha256 "c7ad3646eaff65c11b565899d4f64e0385026bb4ee81daa5827b46469d6ee55b"
 
       def install
         bin.install "koyeb"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.14.0/koyeb-cli_2.14.0_linux_amd64.tar.gz"
-      sha256 "df9b86baa9eb028cfee3f0dc1700e027f0ead14ee66ba5cb68c7ac07dcd22c4d"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v2.15.0/koyeb-cli_2.15.0_linux_arm64.tar.gz"
+      sha256 "e3701ead5d7774c5784d530c67a3fc9e49ab585c225b15ae159de7e157455eca"
 
       def install
         bin.install "koyeb"
