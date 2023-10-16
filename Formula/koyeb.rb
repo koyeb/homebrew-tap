@@ -5,20 +5,20 @@
 class Koyeb < Formula
   desc ""
   homepage "https://koyeb.com"
-  version "3.3.0"
+  version "3.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v3.3.0/koyeb-cli_3.3.0_darwin_amd64.tar.gz"
-      sha256 "84e4d160363d6ed8eab79241588a80a7c4d868815a4e1b5408f57c7cb0f64ca9"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v3.3.1/koyeb-cli_3.3.1_darwin_amd64.tar.gz"
+      sha256 "a019b0e0586fddae208e0c13f8a65f463181f7c08986c9685255ac4ef9d5bafb"
 
       def install
         bin.install "koyeb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v3.3.0/koyeb-cli_3.3.0_darwin_arm64.tar.gz"
-      sha256 "5c43fba5fcd869496fb4150e7d57f8e6716afc39c38211e0480ac855dd55b88a"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v3.3.1/koyeb-cli_3.3.1_darwin_arm64.tar.gz"
+      sha256 "b92168132406c63a0e06423762c057be574c50fbb8e116f030a1ab7f4243eab4"
 
       def install
         bin.install "koyeb"
@@ -28,16 +28,16 @@ class Koyeb < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v3.3.0/koyeb-cli_3.3.0_linux_arm64.tar.gz"
-      sha256 "e8f7888078888b3810adf4ea84dc0e58d6df3609ca3efb7b7c6e832a4dc917b4"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v3.3.1/koyeb-cli_3.3.1_linux_arm64.tar.gz"
+      sha256 "49bb06b65c4f3c298829d354e72a4df611fbd5a3509969899c3de7d10a2edb92"
 
       def install
         bin.install "koyeb"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v3.3.0/koyeb-cli_3.3.0_linux_amd64.tar.gz"
-      sha256 "99a96aa2917bcf5cb04130bacabd723b0ea61f5848a388ae77264293dff57609"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v3.3.1/koyeb-cli_3.3.1_linux_amd64.tar.gz"
+      sha256 "6e89ca9f2974e1139f4ec84c02e61ce20c0bab2728b70edc2e4614657ae14ed5"
 
       def install
         bin.install "koyeb"
