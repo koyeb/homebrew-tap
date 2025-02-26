@@ -5,20 +5,20 @@
 class Koyeb < Formula
   desc ""
   homepage "https://koyeb.com"
-  version "5.4.0"
+  version "5.4.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.0/koyeb-cli_5.4.0_darwin_amd64.tar.gz"
-      sha256 "b8825a4c20ef3a0ff90b813e7d214e477b29fb19ea5b0adf42941bdb2a034809"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.1/koyeb-cli_5.4.1_darwin_amd64.tar.gz"
+      sha256 "6d81387b06bb43ace5cb2a06cd67202dc04d72ee125f70cbad8407687e4442eb"
 
       def install
         bin.install "koyeb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.0/koyeb-cli_5.4.0_darwin_arm64.tar.gz"
-      sha256 "e388827d77a3afc8c3cdc8c456a7229996a5ce7db890e46fe8c57f64476ce7a4"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.1/koyeb-cli_5.4.1_darwin_arm64.tar.gz"
+      sha256 "895b65cc374f05ed0a4e8d5a2dddb1960335a90c3d7594f4cbc511554503c6de"
 
       def install
         bin.install "koyeb"
@@ -29,8 +29,8 @@ class Koyeb < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.0/koyeb-cli_5.4.0_linux_amd64.tar.gz"
-        sha256 "6e9b2dc089bc298d72e59c7b21c53807806209e937b25de4e2fcd02a953a6e40"
+        url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.1/koyeb-cli_5.4.1_linux_amd64.tar.gz"
+        sha256 "2405d73bff96282f0b74743da07fecf5574f710a845e78d89bf8aee4ae3caecc"
 
         def install
           bin.install "koyeb"
@@ -39,8 +39,8 @@ class Koyeb < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.0/koyeb-cli_5.4.0_linux_arm64.tar.gz"
-        sha256 "69497ac03354d1fe9c5a304fa72519c2d658ed2bb7a87b65c0501f3b89750f28"
+        url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.1/koyeb-cli_5.4.1_linux_arm64.tar.gz"
+        sha256 "408b95821a8a80945bb78b4c9b223e15869a2d3875b2f5e9004edc61192c18e6"
 
         def install
           bin.install "koyeb"
