@@ -10,7 +10,7 @@ class Koyeb < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.2/koyeb-cli_5.4.2_darwin_amd64.tar.gz"
-      sha256 "f7f09b8e89e2d541819aa2f437a943a8920be4b4fcd2476e20e743c6e3670d47"
+      sha256 "ff1fb0591667a2e026d15427e259d3bee9ab0e6d6d067e714a1111ef0a76db2d"
 
       def install
         bin.install "koyeb"
@@ -18,7 +18,7 @@ class Koyeb < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.2/koyeb-cli_5.4.2_darwin_arm64.tar.gz"
-      sha256 "8876920130a1764a66ca9ea8ad0ac5f99ebd0a9395e7d6a222238c6a8548a22d"
+      sha256 "827ad2fa4d1b3a77f65ace244695d96b7d5566ba79f9441f8a5dd7896a45afd0"
 
       def install
         bin.install "koyeb"
@@ -30,7 +30,7 @@ class Koyeb < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.2/koyeb-cli_5.4.2_linux_amd64.tar.gz"
-        sha256 "aa724edf8e5e9e049f16fac1b62c47613a33bdf17555581e52784f52758191c4"
+        sha256 "c23b0bfdac1dfd983c06c73545919e87a237a0dc5dec2b4cd078fdd9fb5398b8"
 
         def install
           bin.install "koyeb"
@@ -40,7 +40,7 @@ class Koyeb < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/koyeb/koyeb-cli/releases/download/v5.4.2/koyeb-cli_5.4.2_linux_arm64.tar.gz"
-        sha256 "5f399545065330f5fec40cb4983eb7d6dd70e4f2e9996479857de16cddd184ab"
+        sha256 "ef3ad6e77400b3f9b5ab6a1a74bb1bf2f7fdc4aaea67d003bf7af992d3b57979"
 
         def install
           bin.install "koyeb"
