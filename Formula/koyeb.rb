@@ -5,20 +5,20 @@
 class Koyeb < Formula
   desc ""
   homepage "https://koyeb.com"
-  version "5.10.1"
+  version "5.10.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.10.1/koyeb-cli_5.10.1_darwin_amd64.tar.gz"
-      sha256 "d8aebd72a15cd8a8cb367932a0d2378a516bc3f7b9104223c98b1e6e63d4951d"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.10.2/koyeb-cli_5.10.2_darwin_amd64.tar.gz"
+      sha256 "5460f91a7c3ca06af9c3387a78334ede53855f762218b0783d7002b0101d09a2"
 
       define_method(:install) do
         bin.install "koyeb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.10.1/koyeb-cli_5.10.1_darwin_arm64.tar.gz"
-      sha256 "9e41948578c989669e005cd69cc4eb2b7bb6fdc62ce378ef6143e77ed8535fb2"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.10.2/koyeb-cli_5.10.2_darwin_arm64.tar.gz"
+      sha256 "665d2cde2fdc2925bc84bc94c709117b3bc0524da4a8735fc2bf9972f695445d"
 
       define_method(:install) do
         bin.install "koyeb"
@@ -28,15 +28,15 @@ class Koyeb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.10.1/koyeb-cli_5.10.1_linux_amd64.tar.gz"
-      sha256 "e52cc6cbbc6253c2d63f11a3549e69e81cc3e935461eb947604121aa83b59cf0"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.10.2/koyeb-cli_5.10.2_linux_amd64.tar.gz"
+      sha256 "a6dc0b3079d1c345571891c0d12592db07a9730578afc915e2ddda88a0556c28"
       define_method(:install) do
         bin.install "koyeb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.10.1/koyeb-cli_5.10.1_linux_arm64.tar.gz"
-      sha256 "cd20445c04d95862342f9147f0c73c2f074bd913f6bff41d3f4255f1cc61310e"
+      url "https://github.com/koyeb/koyeb-cli/releases/download/v5.10.2/koyeb-cli_5.10.2_linux_arm64.tar.gz"
+      sha256 "1c154c403329581f36091216e8f73d8e023968cfb4fb721f5a58cb046cdd7991"
       define_method(:install) do
         bin.install "koyeb"
       end
